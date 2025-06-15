@@ -27,7 +27,7 @@ export default function OoredooAPIDemo() {
         setResult('SIM Swap status: Not swapped in last 24 hours');
       }
     } catch (error) {
-      setResult('Error occurred while processing request');
+      setResult('Error occurred while processing request' + error);
     } finally {
       setIsLoading(false);
     }
